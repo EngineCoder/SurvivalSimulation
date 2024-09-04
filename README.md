@@ -40,31 +40,30 @@
 
 + Photon  
 1、[Photon Download](https://www.photonengine.com/zh-CN/sdks#server-sdkserverserver)  
-2、[Photon Tutorial](https://doc.photonengine.com/en-us/realtime/current/getting-started/realtime-intro)  
+2、[Photon Documentation](https://doc.photonengine.com/en-us/realtime/current/getting-started/realtime-intro)  
 3、[Photon API](https://doc-api.photonengine.com/)  
-4、[Photon PUN](https://doc.photonengine.com/en-us/pun/v2/getting-started/pun-intro)  
+4、[Photon PUN2](https://doc.photonengine.com/en-us/pun/v2/getting-started/pun-intro)  
 
 + NHibernate  
 1、[NHibernate Download](https://nhibernate.info/)  
-2、[NHibernate Tutorial](https://nhibernate.info/doc/index.html)
+2、[NHibernate Documentation](https://nhibernate.info/doc/index.html)
 
 + Mysql  
-1、[Mysql Download](https://downloads.mysql.com/archives/installer/)  
-2、[Mysql Tutorial](https://dev.mysql.com/doc/)
+1、[Mysql Download](https://dev.mysql.com/downloads/installer/)  
+2、[Mysql Documentation](https://dev.mysql.com/doc/)
 
 + Other  
 1、[System.IO - FileModel](https://www.cnblogs.com/OpenCoder/p/10766522.html)  
 
-#### 使用说明  
+#### 使用教程  
 
-* 1、需要安装Mysql，使用Mysql可视化编辑工具执行根目录下的Database.sql文件快速创建数据库。  
-* 2、运行根目录下Server/deploy/bin_Win64/文件夹下的PhotonControl.exe  
-* 3、先使用PhotonControl控制面板中的Game Server IP Config 配置一下服务器IP地址。  
-* 4、最后启动已配置好的 Survial 服务器，Start as application,启动游戏服务器。如下图  
+1、需要安装Mysql，使用Mysql可视化编辑工具执行根目录下的Database.sql文件快速创建数据库。  
+2、运行根目录下Server/deploy/bin_Win64/文件夹下的PhotonControl.exe  
+3、先使用PhotonControl控制面板中的Game Server IP Config 配置一下服务器IP地址。  
+4、最后启动已配置好的 Survial 服务器，Start as application,启动游戏服务器。如下图  
 ![](https://images.gitee.com/uploads/images/2020/0921/134921_7bb98680_809545.png "屏幕截图.png")
-* 5、打开已下载的Unity3D工程，运行，注册，登录，就可以试玩了。
-* 6、有兴趣的可以加QQ群：628883253，有什么问题大家一起讨论，一起开发！
-* 7、我相信有你们的加入会更加精彩！我们是独立游戏开发联盟！^_^ O(∩_∩)O
+5、打开已下载的Unity3D工程，运行，注册，登录，就可以试玩了。
+6、有兴趣的可以加QQ群：628883253，有什么问题大家一起讨论。
 
 #### 参与贡献
 ***
