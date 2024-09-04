@@ -61,8 +61,8 @@
 2、运行根目录下Server/deploy/bin_Win64/文件夹下的PhotonControl.exe  
 3、先使用PhotonControl控制面板中的Game Server IP Config 配置一下服务器IP地址。  
 4、最后启动已配置好的 Survial 服务器，Start as application,启动游戏服务器。如下图  
-![](https://images.gitee.com/uploads/images/2020/0921/134921_7bb98680_809545.png "屏幕截图.png")
-5、打开已下载的Unity3D工程，运行，注册，登录，就可以试玩了。
+![](https://images.gitee.com/uploads/images/2020/0921/134921_7bb98680_809545.png "屏幕截图.png")     
+5、打开已下载的Unity3D工程，运行，注册，登录，就可以试玩了。   
 6、有兴趣的可以加QQ群：628883253，有什么问题大家一起讨论。   
 
 #### 参与贡献
