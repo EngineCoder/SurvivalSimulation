@@ -1,6 +1,6 @@
 ﻿using FTools.Codes;
 using FTools.Community;
-using FTools.Tools;
+using FTools.Utils;
 using Photon.SocketServer;
 using PhotonHostRuntimeInterfaces;
 using Server.Handler;
@@ -22,7 +22,7 @@ namespace Server
         /// </summary>
         /// <param name="reasonCode"></param>
         /// <param name="reasonDetail"></param>
-        protected override void OnDisconnect(DisconnectReason reasonCode, string reasonDetail)
+        protected override void OnDisconnect(int reasonCode, string reasonDetail)
         {
             Server.log.Info("【客户端】已断开连接！" + reasonCode.ToString());
             Server.Instance.listPeer.Remove(this);//将其移除

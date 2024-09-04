@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FTools.Tools
+namespace FTools.Utils
 {
     public static partial class Tool
     {

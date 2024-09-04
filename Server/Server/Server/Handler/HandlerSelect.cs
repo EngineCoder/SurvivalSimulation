@@ -1,6 +1,6 @@
 ﻿using FTools.Codes;
 using FTools.Community;
-using FTools.Tools;
+using FTools.Utils;
 using Photon.SocketServer;
 using System.Collections.Generic;
 

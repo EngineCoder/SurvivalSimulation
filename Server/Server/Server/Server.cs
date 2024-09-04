@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using ExitGames.Logging;
-using ExitGames.Logging.Log4Net;
 using FTools.Codes;
 using FTools.Community;
-using log4net.Config;
 using Photon.SocketServer;
 using Server.Handler;
+using ExitGames.Logging;
+using Microsoft.Extensions.Configuration;
+using ExitGames.Logging.Log4Net;
+using log4net.Config;
 
 namespace Server
 {
@@ -35,9 +36,15 @@ namespace Server
 
         #region 匹配系统
         public Queue<Room> queueMaching = new Queue<Room>();//匹配队列
-        public Dictionary<Guid, BigRoom> bigRooms = new Dictionary<Guid,BigRoom>();//大房间
+        public Dictionary<Guid, BigRoom> bigRooms = new Dictionary<Guid, BigRoom>();//大房间
+
+        public Server(IConfiguration configuration) : base(configuration)
+        {
+            Instance = this;
+        }
+
         #endregion
-        
+
 
         /// <summary>
         /// 当有客户端连接时，创建一个Peer,来实现客户端与服务端的通信
@@ -50,8 +57,6 @@ namespace Server
             listPeer.Add(peer);
             log.Info("【客户端】已连接！" + peer.RemoteIPAddress);
             return peer;
-
-
         }
 
         /// <summary>

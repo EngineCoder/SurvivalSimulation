@@ -1,5 +1,5 @@
 ﻿using FTools;
-using FTools.Tools;
+using FTools.Utils;
 using Photon.SocketServer;
 using Server.Manager;
 using System;

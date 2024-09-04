@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace FTools.Tools
+namespace FTools.Utils
 {
     /// <summary>
     /// 通过Key,获得Value
@@ -26,7 +22,7 @@ namespace FTools.Tools
             }
             else
             {
-                return default(V);
+                return default;
             }
         }
     }
