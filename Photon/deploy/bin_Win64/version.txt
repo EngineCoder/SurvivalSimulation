@@ -1,0 +1,14 @@
+== Core ==
+PhotonSocketServer.2022
+x64 Release
+BuildDate: 2024-04-30 12:09:51
+Version: 5.0.12.13228
+SVN repository: photon-socketserver/branches/sdk_5.0
+SVN revisions of...
+... this project: 13228
+== SDK ==
+BuildDate: 2024-04-30 12:28:01
+Version: 5.0.13.32034
+SVN repository: photon-socketserver-sdk/branches/sdk_5.0
+SVN revisions of...
+... this project: 32034

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PoolInfo>
+  <PoolList>
+    <Pool
+      PoolName="AudioSource"
+      Prefab="Prefabs/AudioSource/AudioSource"
+      PoolSize="6"
+      FixedSize="false">
+    </Pool>
+  </PoolList>
+</PoolInfo>

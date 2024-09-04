@@ -1,0 +1,10 @@
+{
+    "Nodes": [
+        {
+            "Region": "EU",
+            "IpAddress": "127.0.0.1",
+            "IpAddressIPv6": "::1",
+            "Hostname": "localhost"
+        }
+    ]
+}

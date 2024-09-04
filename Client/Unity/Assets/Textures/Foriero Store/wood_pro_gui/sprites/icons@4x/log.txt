@@ -1,0 +1,1 @@
+183 object(s) was successfully exported to: /Volumes/CalDigit T4R 4TB/Projects/Unity/PROJECTS/UNITY/Foriero Store/Assets/Foriero Store/Projects/GUIs/wood_pro_gui/sprites/icons@4x

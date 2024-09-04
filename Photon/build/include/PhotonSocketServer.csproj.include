@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <hPath>$(MSBuildThisFileDirectory)../../lib/PhotonSocketServer/$(TargetFramework)/</hPath>
+    <hPath  Condition=" '$(TargetFramework)' == '$(BuildTargetNetCore)'">$(hPath)/$(RuntimeIdentifier)</hPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Condition="Exists('$(hPath)/Photon.SocketServer.dll')" Include="Photon.SocketServer">
+      <HintPath>$(hPath)/Photon.SocketServer.dll</HintPath>
+    </Reference>
+
+    <!--<PackageReference Condition="!Exists('$(hPath)/Photon.SocketServer.dll')" Include="Photon.SocketServer" Version="$(ManagedCoreVersion)" />-->
+  </ItemGroup>
+</Project>

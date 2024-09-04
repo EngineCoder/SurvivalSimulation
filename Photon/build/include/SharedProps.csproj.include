@@ -1,0 +1,36 @@
+﻿<Project>
+
+  <Import Project="UseReferenceDetector.csproj.include" Condition="Exists('$(MSBuildThisFileDirectory)\UseReferenceDetector.csproj.include')"/>
+
+  <PropertyGroup>
+    <Version>5.0.13.32034</Version>
+    <SdkRevisionId>32034</SdkRevisionId>
+    <PluginApiVersion>1.1.0</PluginApiVersion>
+    <ManagedCoreVersion>5.0.13.32033</ManagedCoreVersion>
+
+    <Authors>Exit Games GmbH</Authors>
+    <Company>Exit Games GmbH</Company>
+    <Copyright>(c) Exit Games GmbH, http://www.exitgames.com</Copyright>
+    <Trademark>Exit Games Photon</Trademark>
+    
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+
+    <DeployWinDirName>deploy_win</DeployWinDirName>
+    <DeployLinuxDirName>deploy_linux</DeployLinuxDirName>
+    <DeployOsxDirName>deploy_osx</DeployOsxDirName>
+    <DeployNetFrameworkDirName>deploy</DeployNetFrameworkDirName>
+    <DevOutDirName>dev_out</DevOutDirName>
+
+    <PluginsFolder>Plugins</PluginsFolder>
+    <PluginsLibFolder>lib</PluginsLibFolder>
+
+    <ConfigDirName>config</ConfigDirName>
+    <PublishWB12DirName>WebHooksPlugin1.2</PublishWB12DirName>
+    <PublishTPDirName>TestPlugins</PublishTPDirName>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  
+</Project>

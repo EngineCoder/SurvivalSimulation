@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\build\include\SharedProps.csproj.include" />
+  <Import Project="..\..\..\build\include\BuildOsDeps.csproj.include" />
+  <Import Project="..\..\..\build\include\BuildPhotonHostRuntimeInterfaces.csproj.include" />
+
+  <PropertyGroup>
+    <AssemblyName>PhotonHive</AssemblyName>
+    <RootNamespace>Photon.Hive</RootNamespace>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <Import Project="..\..\..\build\include\TargetFrameworks.csproj.include" />
+  <Import Project="..\..\..\build\include\MinimalPhotonAppDependency.csproj.include" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="6.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\HivePlugin\PhotonHivePlugin.csproj" />
+    <ProjectReference Include="..\..\Photon.Common\Photon.Common.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == '$(BuildTargetNetFramework)'">
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' != '$(BuildTargetNetFramework)'">
+      <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="6.0.0" />
+  </ItemGroup>
+</Project>

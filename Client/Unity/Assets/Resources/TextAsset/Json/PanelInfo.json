@@ -1,0 +1,36 @@
+{
+  "panelInfoList": [
+    {
+      "panelType": "Login",
+      "path": "Prefabs/UIPanel/Panel_Login"
+    },
+    {
+      "panelType": "Register",
+      "path": "Prefabs/UIPanel/Panel_Register"
+    },
+
+    {
+      "panelType": "Tip",
+      "path": "Prefabs/UIPanel/Panel_Tip"
+    },
+    {
+      "panelType": "MainMenu",
+      "path": "Prefabs/UIPanel/Panel_Menu"
+    },
+
+    {
+      "panelType": "Store",
+      "path": "Prefabs/UIPanel/Panel_Store"
+    },
+
+    {
+      "panelType": "Battle",
+      "path": "Prefabs/UIPanel/Panel_Battle"
+    },
+
+    {
+      "panelType": "Matching",
+      "path": "Prefabs/UIPanel/Panel_Matching"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\include\SharedProps.csproj.include" />
+  <Import Project="..\..\build\include\BuildOsDeps.csproj.include" />
+
+  <PropertyGroup>
+    <RootNamespace>Photon.UnitTest.Utils</RootNamespace>
+    <OutputType>Library</OutputType>
+    <CopyLocalLockFileAssemblies>True</CopyLocalLockFileAssemblies>
+    <IsPackable>false</IsPackable>
+    <IsPublishable>false</IsPublishable>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+  <Import Project="..\..\build\include\TargetFrameworksUnitTest.csproj.include" />
+  <Import Project="..\..\build\include\MinimalPhotonDependency.csproj.include" />
+  <Import Project="..\..\build\include\PhotonSocketServer.UnitTesting.csproj.include" />
+  <Import Project="..\..\build\include\ClientLibDependency.csproj.include" />
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+  </ItemGroup>
+</Project>

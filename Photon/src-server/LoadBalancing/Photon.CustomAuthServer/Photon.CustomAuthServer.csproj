@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\build\include\SharedProps.csproj.include" />
+  <Import Project="..\..\..\build\include\BuildOsDeps.csproj.include" />
+  <Import Project="..\..\..\build\include\BuildPhotonHostRuntimeInterfaces.csproj.include" />
+
+  <PropertyGroup>
+    <AssemblyName>Photon.CustomAuthServer</AssemblyName>
+    <RootNamespace>Photon.CustomAuthServer</RootNamespace>
+    <CopyLocalLockFileAssemblies>True</CopyLocalLockFileAssemblies>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+
+  <Import Project="..\..\..\build\include\TargetFrameworks.csproj.include" />
+  <Import Project="..\..\..\build\include\MinimalPhotonAppDependency.csproj.include" />
+
+  <PropertyGroup>
+    <OutputPath>./bin</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.8" />
+  </ItemGroup>
+
+  <Target Name="TransformConfig" AfterTargets="PostBuildDeploy" Condition="'$(ProjectDir)'!='' AND '$(transformConfig)'!='false' ">
+    <PropertyGroup>
+      <PropertyFile>$(ProjectDir)properties.proj</PropertyFile>
+    </PropertyGroup>
+    <Message Importance="high" Text="Proceeding to transform After BUILD with $(PropertyFile) TargetDir: $(CASDeployDir)"></Message>
+    <!--<MSBuild Projects="..\..\..\build\transformConfig.proj" Targets="TransformConfig" Properties="PropertyFile=$(PropertyFile);RootDir=$(CASDeployDir)" />-->
+  </Target>
+
+  <Target Name="PostBuildDeploy" AfterTargets="Build" Condition=" '$(TargetFramework)' == '$(BuildTargetNetCore)' OR '$(TargetFramework)' == '$(BuildTargetNetFramework)' ">
+
+    <PropertyGroup>
+      <DeployFolder>$(ProjectDir)../../$(DevOutDir)</DeployFolder>
+      <CASDeployDir>$(DeployFolder)/CustomAuthServer/bin</CASDeployDir>
+
+      <SourceDir>$(TargetDir)</SourceDir>
+
+    </PropertyGroup>
+
+    <Message Importance="high" Text="SourceDir is $(SourceDir)"></Message>
+    <Message Importance="high" Text="Building and copying CustomAuthServer to $(CASDeployDir)"></Message>
+    <ItemGroup>
+      <SourceFiles Include="$(SourceDir)/*.*" />
+      <RSourceFiles Include="$(SourceDir)/runtimes/**/*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(SourceFiles)" DestinationFiles="@(SourceFiles->'$(CASDeployDir)/%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(RSourceFiles)" DestinationFiles="@(RSourceFiles->'$(CASDeployDir)/runtimes/%(RecursiveDir)%(Filename)%(Extension)')" />
+
+  </Target>
+
+  <Target Name="TransformConfigAfterPublish" AfterTargets="PostPublishDeploy" Condition="'$(transformConfig)'!='false'">
+    <PropertyGroup>
+      <PropertyFile Condition=" '$(PropertyFile)' == '' ">$(ProjectDir)properties.proj</PropertyFile>
+    </PropertyGroup>
+    <Message Importance="high" Text="Proceeding to transform After PUBLISH with $(PropertyFile) TargetDir: $(CASDeployDir)"></Message>
+    <!--<MSBuild Projects="..\..\..\build\transformConfig.proj" Targets="TransformConfig" Properties="PropertyFile=$(PropertyFile);RootDir=$(CASDeployDir)" />-->
+    <Message Importance="high" Text="---Transformation done PropertyFile: $(PropertyFile) TargetDir: $(CASDeployDir)"></Message>
+  </Target>
+
+  <Target Name="PostPublishDeploy" AfterTargets="Publish">
+
+    <PropertyGroup>
+      <DeployFolder>$(ProjectDir)../../../$(DeployDir)</DeployFolder>
+      <CASDeployDir>$(DeployFolder)/CustomAuthServer/bin</CASDeployDir>
+
+      <SourceDir>$(TargetDir)/publish</SourceDir>
+    </PropertyGroup>
+
+    <Message Importance="high" Text="Publishing CustomAuthServer to $(CASDeployDir)"></Message>
+    <ItemGroup>
+      <PublishSourceFiles Include="$(SourceDir)/**/*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(PublishSourceFiles)" DestinationFiles="@(PublishSourceFiles->'$(CASDeployDir)/%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+</Project>

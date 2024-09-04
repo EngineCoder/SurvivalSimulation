@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\include\SharedProps.csproj.include" />
+  <Import Project="..\..\build\include\BuildOsDeps.csproj.include" />
+
+  <PropertyGroup>
+    <AssemblyName>Photon.Common</AssemblyName>
+    <RootNamespace>Photon.Common</RootNamespace>
+    <OutputType>Library</OutputType>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+  <Import Project="..\..\build\include\TargetFrameworks.csproj.include" />
+  <Import Project="..\..\build\include\MinimalPhotonDependency.csproj.include" />
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Photon.LoadBalancing.UnitTests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Condition=" '$(TargetFramework)' != '$(BuildTargetNetFramework)' " Include="Photon.Metrics" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == '$(BuildTargetNetFramework)' ">
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Photon.Plugins.Common\Photon.Plugins.Common.csproj" />
+  </ItemGroup>
+</Project>
