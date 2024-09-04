@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--assembly：当前程序集   namespace：完整命名空间-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="FTools"
+                   namespace="FTools.Community">
+  <class name="User" table="user">
+    <id name="Id" column="id" type="Int64">
+      <generator class="native"></generator>
+      <!--id是自动生成的自动增长的，详细见NHibernate-->
+    </id>
+    <property name="User_account" column="user_account" type="String"/>
+    <property name="User_nickname" column="user_nickname" type="String"/>
+    <property name="User_password" column="user_password" type="String"/>
+    <property name="User_integral_grade" column="user_integral_grade" type="String"/>
+    <property name="User_sex" column="user_sex" type="Int32"/>
+    <property name="User_copper_coins" column="user_copper_coins" type="Int32"/>
+    <property name="User_gold_ingot" column="user_gold_ingot" type="Int32"/>
+    <property name="User_innings" column="user_innings" type="Int32"/>
+    <property name="User_win_rate" column="user_win_rate" type="Int32"/>
+    <property name="User_lastLogin_date" column="user_lastLogin_date" type="DateTime"/>
+    <property name="User_register_date" column="user_register_date" type="DateTime"/>
+  </class>
+</hibernate-mapping>
