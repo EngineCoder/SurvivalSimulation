@@ -1,0 +1,20 @@
+﻿2024-09-05 11:35:28,090 [1] INFO  Photon.NameServer.PhotonApp - Initializing ...
+2024-09-05 11:35:28,099 [1] INFO  Photon.NameServer.PhotonApp - ServicePointManager.DefaultConnectionLimit=2147483647
+2024-09-05 11:35:28,103 [1] INFO  Photon.NameServer.PhotonApp - TokenCreator initialized with an expiration of 00:30:00
+2024-09-05 11:35:28,377 [1] INFO  Photon.NameServer.Configuration.ConfigurationLoader - NameSever JSON was not changed during env variables expansion
+2024-09-05 11:35:28,622 [1] INFO  Photon.Common.Authentication.Diagnostic.CustomAuthResultCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Custom
+2024-09-05 11:35:28,729 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - Performance counters successfully initialized: instanceName=_Total
+2024-09-05 11:35:28,837 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Custom
+2024-09-05 11:35:28,951 [1] INFO  Photon.Common.Authentication.Diagnostic.CustomAuthResultCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Facebook
+2024-09-05 11:35:29,054 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Facebook
+2024-09-05 11:35:29,163 [1] INFO  Photon.Common.Authentication.Diagnostic.CustomAuthResultCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Oculus
+2024-09-05 11:35:29,272 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Oculus
+2024-09-05 11:35:29,380 [1] INFO  Photon.Common.Authentication.Diagnostic.CustomAuthResultCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Steam
+2024-09-05 11:35:29,489 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Steam
+2024-09-05 11:35:29,602 [1] INFO  Photon.Common.Authentication.Diagnostic.CustomAuthResultCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Viveport
+2024-09-05 11:35:29,710 [1] INFO  Photon.SocketServer.Diagnostics.HttpQueuePerformanceCounters - Performance counters successfully initialized: instanceName=LoadBalancing_Viveport
+2024-09-05 11:35:29,822 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=NameServer; AppPath=E:\GitHub\SurvivalSimulation\Photon\deploy\Nameserver, Type=Photon.NameServer.PhotonApp 
+2024-09-05 11:35:29,822 [1] INFO  Photon.SocketServer.ApplicationBase - Using Server GC:True
+2024-09-05 11:35:29,823 [1] INFO  Photon.SocketServer.ApplicationBase - Using GC LatencyMode:Interactive
+2024-09-05 11:35:30,859 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=NameServer
+2024-09-05 11:35:30,877 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=NameServer

@@ -1,0 +1,34 @@
+﻿2024-09-05 11:35:27,708 [1] INFO  Photon.LoadBalancing.MasterServer.MasterApplication - Master server initialization started
+2024-09-05 11:35:27,723 [1] INFO  Photon.LoadBalancing.MasterServer.MasterApplication - TokenCreator initialized with an expiration of 01:00:00
+2024-09-05 11:35:27,991 [1] INFO  Photon.Common.LoadBalancer.LoadBalancer`1 - Initialized Load Balancer from configuration file: E:\GitHub\SurvivalSimulation\Photon\deploy\LoadBalancer.config
+2024-09-05 11:35:27,995 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - Creating application: appId={Default}/{Default}
+2024-09-05 11:35:28,021 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - Plugin configured: name=TestPlugins
+2024-09-05 11:35:28,022 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: AsyncJoin=False
+2024-09-05 11:35:28,022 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: BaseUrl=http://localhost:55557/realtime-webhooks-1.2
+2024-09-05 11:35:28,022 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: HasErrorInfo=true
+2024-09-05 11:35:28,022 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: IsPersistent=true
+2024-09-05 11:35:28,022 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathClose=GameClose
+2024-09-05 11:35:28,023 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathCreate=GameCreate
+2024-09-05 11:35:28,023 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathEvent=GameEvent
+2024-09-05 11:35:28,023 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathGameProperties=GameProperties
+2024-09-05 11:35:28,023 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathJoin=GameJoin
+2024-09-05 11:35:28,023 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathLeave=GameLeave
+2024-09-05 11:35:28,024 [1] INFO  Photon.LoadBalancing.MasterServer.GameApplication - 	Attribute: PathLoad=GameCreate
+2024-09-05 11:35:28,029 [1] INFO  Photon.LoadBalancing.MasterServer.MasterApplication - Master server initialization finished
+2024-09-05 11:35:28,030 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=Master; AppPath=E:\GitHub\SurvivalSimulation\Photon\deploy\LoadBalancing\Master, Type=Photon.LoadBalancing.MasterServer.MasterApplication 
+2024-09-05 11:35:28,030 [1] INFO  Photon.SocketServer.ApplicationBase - Using Server GC:True
+2024-09-05 11:35:28,031 [1] INFO  Photon.SocketServer.ApplicationBase - Using GC LatencyMode:Interactive
+2024-09-05 11:35:29,869 [7] INFO  Photon.LoadBalancing.MasterServer.GameServer.IncomingGameServerPeer - game server connection from 127.0.0.1:53088 established (id=1)
+2024-09-05 11:35:29,883 [7] INFO  Photon.LoadBalancing.MasterServer.GameServer.GameServerContextManager - Registering GS by InitRequest. key:'127.0.0.1-5056-4531', id:'ada5538c-b6b1-4fee-98be-d484350ca2fa', state:0, loadIndex:3, p:T:IncomingGameServerPeer,ConnId:1,ip:127.0.0.1:53088,Tcp,GpBinaryV18
+2024-09-05 11:35:29,887 [7] INFO  Photon.LoadBalancing.MasterServer.GameServer.GameServerContext - Attaching new peer to context. old peer:, new peer:T:IncomingGameServerPeer,ConnId:1,ip:127.0.0.1:53088,Tcp,GpBinaryV18, ctx:[key:127.0.0.1-5056-4531, serverId:ada5538c-b6b1-4fee-98be-d484350ca2fa]
+2024-09-05 11:35:29,889 [7] INFO  Photon.LoadBalancing.MasterServer.GameServer.ReplicationAssistant - Replication started for context:[key:127.0.0.1-5056-4531, serverId:ada5538c-b6b1-4fee-98be-d484350ca2fa]
+2024-09-05 11:35:29,911 [7] INFO  Photon.LoadBalancing.MasterServer.GameServer.GameServerContextManager - GS is added. key:'127.0.0.1-5056-4531', id:'ada5538c-b6b1-4fee-98be-d484350ca2fa',p:GameServer(Id=ada5538c-b6b1-4fee-98be-d484350ca2fa, ConnId=1) at 127.0.0.1:4531/127.0.0.1:5056
+2024-09-05 11:35:29,913 [7] INFO  Photon.LoadBalancing.MasterServer.GameServer.GameServerContextManager - GameServers List:
+host_localhost, state_Normal, load_Level3, lbPriority_0, serverId_ada5538c-b6b1-4fee-98be-d484350ca2fa, key_127.0.0.1-5056-4531, p_has peer
+
+2024-09-05 11:35:30,856 [1] INFO  Photon.LoadBalancing.MasterServer.MasterApplication - OnStopRequested... going to disconnect 1 GS peers
+2024-09-05 11:35:30,857 [19] INFO  Photon.LoadBalancing.MasterServer.GameServer.IncomingGameServerPeer - OnDisconnect: game server connection closed (connectionId=1, addr:127.0.0.1, serverId=ada5538c-b6b1-4fee-98be-d484350ca2fa, reason=0)
+2024-09-05 11:35:30,858 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=Master
+2024-09-05 11:35:30,865 [1] INFO  Photon.LoadBalancing.MasterServer.MasterApplication - Master server TearDown is called. Master server stopped
+2024-09-05 11:35:30,876 [1] INFO  Photon.LoadBalancing.MasterServer.GameServer.GameServerContextManager - Context was removed. context=[key:127.0.0.1-5056-4531, serverId:ada5538c-b6b1-4fee-98be-d484350ca2fa], p:
+2024-09-05 11:35:30,876 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=Master

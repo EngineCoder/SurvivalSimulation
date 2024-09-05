@@ -1,0 +1,61 @@
+﻿2024-09-05 11:35:18,356 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Using Server GC:True
+2024-09-05 11:35:18,373 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Using GC LatencyMode:Interactive
+2024-09-05 11:35:18,374 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Setup: serverId=ada5538c-b6b1-4fee-98be-d484350ca2fa
+2024-09-05 11:35:18,410 [1] INFO  Photon.Hive.Plugin.PluginManager - Plugin configured: name=TestPlugins
+2024-09-05 11:35:18,412 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: AsyncJoin=False
+2024-09-05 11:35:18,412 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: BaseUrl=http://localhost:55557/realtime-webhooks-1.2
+2024-09-05 11:35:18,412 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: HasErrorInfo=true
+2024-09-05 11:35:18,413 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: IsPersistent=true
+2024-09-05 11:35:18,414 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathClose=GameClose
+2024-09-05 11:35:18,414 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathCreate=GameCreate
+2024-09-05 11:35:18,414 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathEvent=GameEvent
+2024-09-05 11:35:18,415 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathGameProperties=GameProperties
+2024-09-05 11:35:18,415 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathJoin=GameJoin
+2024-09-05 11:35:18,416 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathLeave=GameLeave
+2024-09-05 11:35:18,416 [1] INFO  Photon.Hive.Plugin.PluginManager - 	Attribute: PathLoad=GameCreate
+2024-09-05 11:35:18,462 [1] INFO  Photon.Hive.Plugin.PluginManager - Loaded Assembly Name=TestPlugins, Version=5.0.13.32034, Culture=, PublicKey token=, Path=E:\GitHub\SurvivalSimulation\Photon\deploy\Plugins/TestPlugins//bin/TestPlugins.dll
+2024-09-05 11:35:18,462 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=mscorlib, Version=4.0.0.0, Culture=, PublicKey token=B7-7A-5C-56-19-34-E0-89, Path=
+2024-09-05 11:35:18,463 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=System.Core, Version=4.0.0.0, Culture=, PublicKey token=B7-7A-5C-56-19-34-E0-89, Path=
+2024-09-05 11:35:18,463 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=System, Version=4.0.0.0, Culture=, PublicKey token=B7-7A-5C-56-19-34-E0-89, Path=
+2024-09-05 11:35:18,463 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=PhotonHivePlugin, Version=1.1.0.32034, Culture=, PublicKey token=, Path=
+2024-09-05 11:35:18,464 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=PhotonHive, Version=5.0.13.32034, Culture=, PublicKey token=, Path=
+2024-09-05 11:35:18,464 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=Newtonsoft.Json, Version=13.0.0.0, Culture=, PublicKey token=30-AD-4F-E6-B2-A6-AE-ED, Path=
+2024-09-05 11:35:18,464 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=PhotonHive.WebHooksPlugin1.2, Version=5.0.13.32034, Culture=, PublicKey token=, Path=
+2024-09-05 11:35:18,464 [1] INFO  Photon.Hive.Plugin.PluginManager - Referenced Assembly Name=nunit.framework, Version=3.13.3.0, Culture=, PublicKey token=26-38-CD-05-61-07-44-EB, Path=
+2024-09-05 11:35:18,465 [1] INFO  Photon.Hive.Plugin.PluginManager - Plugin Type TestPlugins.PluginFactory from assembly TestPlugins, Version=5.0.13.32034, Culture=neutral, PublicKeyToken=null was successfully created
+2024-09-05 11:35:18,516 [1] INFO  Photon.Hive.Plugin.PluginManager - Plugin manager (version=1.1.0.32034) is setup. type=TestPlugins.PluginFactory;path=E:\GitHub\SurvivalSimulation\Photon\deploy\Plugins/TestPlugins//bin/TestPlugins.dll;version=1.1.0.32034
+2024-09-05 11:35:24,330 [1] INFO  Photon.LoadBalancing.Diagnostic.LBPerformanceCounters - PerformanceCounter category 'Photon: GS LB Counters' does not exists and will be created
+2024-09-05 11:35:25,351 [1] INFO  Photon.LoadBalancing.Diagnostic.LBPerformanceCounters - PerformanceCounter category 'Photon: MS LB Counters' does not exists and will be created
+2024-09-05 11:35:26,416 [1] INFO  Photon.LoadBalancing.Diagnostic.LBPerformanceCounters - PerformanceCounter category 'Photon: MS LB Operations Counters' does not exists and will be created
+2024-09-05 11:35:26,806 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - TokenCreator initialized with an expiration of 01:00:00
+2024-09-05 11:35:27,472 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Bandwidth counters are not valid
+2024-09-05 11:35:27,475 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter Business Logic Queue
+2024-09-05 11:35:27,475 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter ENet Queue
+2024-09-05 11:35:27,476 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter ENet Threads Processing
+2024-09-05 11:35:27,476 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter ENet Threads Active
+2024-09-05 11:35:27,477 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter TCP: Disconnected Peers +/sec
+2024-09-05 11:35:27,477 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter TCP: Disconnected Peers (C) +/sec
+2024-09-05 11:35:27,477 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter TCP: Peers
+2024-09-05 11:35:27,478 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter Peers
+2024-09-05 11:35:27,478 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter UDP: Disconnected Peers +/sec
+2024-09-05 11:35:27,478 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter UDP: Disconnected Peers (C) +/sec
+2024-09-05 11:35:27,479 [1] WARN  Photon.Common.LoadBalancer.LoadShedding.WorkloadController - Did not find counter UDP: Peers
+2024-09-05 11:35:27,508 [1] INFO  Photon.Common.LoadBalancer.LoadShedding.FeedbackControlSystem - Initialized FeedbackControlSystem with 2 controllers from config file.
+2024-09-05 11:35:27,557 [1] INFO  Photon.Common.LoadBalancer.ServerStateManager - Watching for application state file in E:\GitHub\SurvivalSimulation\Photon\deploy\ServerState.txt
+2024-09-05 11:35:27,559 [1] INFO  Photon.Common.LoadBalancer.ServerStateManager - Server state is set to online
+2024-09-05 11:35:27,559 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - Initializing master server connection ...
+2024-09-05 11:35:27,575 [1] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: Parameters to register on master: address 127.0.0.1, TCP 4531, UDP 5056, WebSocket 9091, Secure WebSocket 19091, ServerID ada5538c-b6b1-4fee-98be-d484350ca2fa, Hostname localhost, IPv6Address , WebRTC 7072
+2024-09-05 11:35:27,587 [1] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: Connecting to master at 127.0.0.1:4520, serverId=ada5538c-b6b1-4fee-98be-d484350ca2fa
+2024-09-05 11:35:27,589 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=Game; AppPath=E:\GitHub\SurvivalSimulation\Photon\deploy\LoadBalancing\GameServer, Type=Photon.LoadBalancing.GameServer.GameApplication 
+2024-09-05 11:35:27,589 [1] INFO  Photon.SocketServer.ApplicationBase - Using Server GC:True
+2024-09-05 11:35:27,589 [1] INFO  Photon.SocketServer.ApplicationBase - Using GC LatencyMode:Interactive
+2024-09-05 11:35:29,839 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - OnStopRequested: serverid=ada5538c-b6b1-4fee-98be-d484350ca2fa
+2024-09-05 11:35:29,934 [8] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: connection established: address:localhost, ConnectionId:e8fe6ce6-1ad0-44ad-b226-62eee9edb9b5
+2024-09-05 11:35:29,934 [8] INFO  Photon.Common.LoadBalancer.ServerStateManager - Server state is set to online
+2024-09-05 11:35:29,938 [8] INFO  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer - Successfully registered at master server: serverId=ada5538c-b6b1-4fee-98be-d484350ca2fa
+2024-09-05 11:35:29,939 [8] INFO  Photon.LoadBalancing.GameServer.MasterServerConnectionBase - s2s MS connection: connection registered on master: address:localhost
+2024-09-05 11:35:30,851 [1] WARN  Photon.SocketServer.ServerToServer.S2SPeerBase - SyncDisconnect failed to wait for disconnect during 1000 ms
+2024-09-05 11:35:30,854 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=Game
+2024-09-05 11:35:30,860 [24] WARN  Photon.LoadBalancing.GameServer.OutgoingMasterServerPeer - s2s MS connection: connection closed (id=1, reason=2, detail=), serverId=ada5538c-b6b1-4fee-98be-d484350ca2fa
+2024-09-05 11:35:30,863 [1] INFO  Photon.LoadBalancing.GameServer.GameApplication - TearDown: serverId=ada5538c-b6b1-4fee-98be-d484350ca2fa
+2024-09-05 11:35:30,863 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=Game
